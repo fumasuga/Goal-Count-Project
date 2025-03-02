@@ -4,7 +4,7 @@ import Header from "@/components/layouts/header/header.component";
 import { AlertDialog } from "@/components/ui/alert-dialog";
 import { createClient } from "@/utils/supabase/server";
 import { redirect } from "next/navigation";
-import { Suspense, use } from "react";
+import { Suspense } from "react";
 
 export default async function GoalList() {
   const supabase = await createClient();

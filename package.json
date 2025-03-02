@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "find-deadcode": "ts-prune"
   },
   "dependencies": {
     "@prisma/client": "^6.2.1",
@@ -47,6 +48,7 @@
     "postcss": "^8",
     "prisma": "^6.2.1",
     "tailwindcss": "^3.4.1",
+    "ts-prune": "^0.10.3",
     "typescript": "^5.7.3"
   }
 }

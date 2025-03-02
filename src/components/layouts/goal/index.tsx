@@ -34,12 +34,6 @@ import { GoalType } from "@/types/goal";
 import { deleteGoal, getGoals } from "@/lib/api";
 import { useEffect, useState } from "react";
 
-async function handleDeleteGoal(id : number) {
-  await deleteGoal(id)
-  window.location.reload()
-}
-
-
 export default function Goal() {
   const [goals, setGoals] = useState([]);
 

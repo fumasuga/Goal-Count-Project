@@ -1,7 +1,5 @@
 import Header from "@/components/layouts/header/header.component";
 import CreateGoal from "@/components/layouts/goal/create";
-import { GoalSkeleton } from "@/components/layouts/goal/goalSkeleton";
-import { Suspense } from "react";
 import { createClient } from "@/utils/supabase/server";
 import { redirect } from "next/navigation";
 
