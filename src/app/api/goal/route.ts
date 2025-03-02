@@ -8,7 +8,7 @@ export default async function doConnect() {
   try {
     await prisma.$connect();
   } catch {
-    return Error("Failed to connect to database");
+    return new Error("Failed to connect to database: ");
   } finally {
     await prisma.$disconnect();
   }
