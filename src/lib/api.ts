@@ -1,7 +1,7 @@
 // 目標取得API呼び出し
 export async function getGoals() {
   try {
-    const res = await fetch(`https://goal-count-project.vercel.app//api/goal`, {
+    const res = await fetch(`https://goal-count-project.vercel.app/api/goal`, {
       cache: "no-store",
     });
 
@@ -19,7 +19,7 @@ export async function getGoals() {
 // 目標削除API呼び出し
 export async function deleteGoal(id: number) {
   try {
-    const res = await fetch(`https://goal-count-project.vercel.app//api/goal`, {
+    const res = await fetch(`https://goal-count-project.vercel.app/api/goal`, {
       method: "DELETE",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ id: id }),
